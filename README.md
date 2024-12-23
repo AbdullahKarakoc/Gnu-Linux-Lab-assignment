@@ -19,6 +19,7 @@ The project involves parsing Nginx access logs to extract and process specific i
 ├── parse_log.service     # systemd service file for log processing
 └── cronjob.txt           # Cron job definition file
 ```
+![Ekran görüntüsü 2024-12-22 001632](https://github.com/user-attachments/assets/a7f7ea1b-ea82-4b95-a163-e133d880f6f3)
 
 ---
 
@@ -108,6 +109,7 @@ Group=root
 [Install]
 WantedBy=multi-user.target
 ```
+![Ekran görüntüsü 2024-12-22 001555](https://github.com/user-attachments/assets/e83ad1fe-b716-4658-ae6e-d234fd053c8a)
 
 ### 5. **`parse_log.service`**
 
@@ -193,6 +195,12 @@ sudo systemctl status log.service
 sudo systemctl status parse_log.service
 
 ```
+![Ekran görüntüsü 2024-12-22 002629](https://github.com/user-attachments/assets/80f1c832-8612-4db7-a0d8-5e3e50813dfc)
+
+```
+
+![Ekran görüntüsü 2024-12-22 002703](https://github.com/user-attachments/assets/8dace34a-cb8c-4078-971d-fcb021052ce5)
+
 
 ### 2. **Verify Log Parsing**
 
@@ -201,12 +209,14 @@ Ensure parsed logs are being created in the `parsed_logs` directory:
 ```bash
 ls /root/Gnu-Linux-Lab-assignment/parsed_logs
 ```
+![Ekran görüntüsü 2024-12-22 005317](https://github.com/user-attachments/assets/ed711cea-b95e-4c4d-af68-ab17166381ed)
 
 ### 3. **Inspect Parsed Log Content**
 
 ```bash
 cat /root/Gnu-Linux-Lab-assignment/parsed_logs/<timestamp>.log
 ```
+![Ekran görüntüsü 2024-12-23 153058](https://github.com/user-attachments/assets/bc86e583-b545-4177-b453-3e33116c4f4e)
 
 ### 4. **Simulate Manual Script Execution**
 
