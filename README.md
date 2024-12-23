@@ -197,7 +197,6 @@ sudo systemctl status parse_log.service
 ```
 ![Ekran görüntüsü 2024-12-22 002629](https://github.com/user-attachments/assets/80f1c832-8612-4db7-a0d8-5e3e50813dfc)
 
-```
 
 ![Ekran görüntüsü 2024-12-22 002703](https://github.com/user-attachments/assets/8dace34a-cb8c-4078-971d-fcb021052ce5)
 
