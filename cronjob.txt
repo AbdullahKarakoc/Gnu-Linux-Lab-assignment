@@ -1,0 +1,5 @@
+0 * * * * /usr/bin/systemctl start log.service
+59 * * * * /usr/bin/systemctl stop log.service
+
+0 * * * * /usr/bin/systemctl start parse_log.service
+59 * * * * /usr/bin/systemctl stop parse_log.service
